@@ -13,9 +13,10 @@ import { FeedbackComponent } from './home/feedback/feedback.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './home/header/header.component';
+import { ItemComponent } from './home/category/item/item.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, CategoryComponent, ArticlesComponent, FeedbackComponent, NavbarComponent, FooterComponent, HeaderComponent],
+  declarations: [AppComponent, HomeComponent, CategoryComponent, ArticlesComponent, FeedbackComponent, NavbarComponent, FooterComponent, HeaderComponent, ItemComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
