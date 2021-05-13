@@ -10,12 +10,23 @@ import { HomeComponent } from './home/home/home.component';
 import { CategoryComponent } from './home/category/category.component';
 import { ArticlesComponent } from './home/articles/articles.component';
 import { FeedbackComponent } from './home/feedback/feedback.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './home/header/header.component';
+import { SidenavComponent } from './navigation/sidenav/sidenav.component';
+import { NavbarComponent } from './navigation/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, CategoryComponent, ArticlesComponent, FeedbackComponent, NavbarComponent, FooterComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    CategoryComponent,
+    ArticlesComponent,
+    FeedbackComponent,
+    FooterComponent,
+    HeaderComponent,
+    SidenavComponent,
+    NavbarComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
