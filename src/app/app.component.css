@@ -35,3 +35,25 @@ a:active {
   padding: 0;
   margin: 0;
 }
+
+/* hide the navbar button in big screens */
+.toggle-navbar-button {
+  visibility: hidden;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* remove the nav links */
+  .nav-links-for-pc {
+    visibility: hidden;
+    display: none;
+  }
+
+  .toggle-navbar-button {
+    visibility: visible;
+    display: flex;
+  }
+  .nav-caption {
+    padding-left: 0.5rem;
+  }
+}
