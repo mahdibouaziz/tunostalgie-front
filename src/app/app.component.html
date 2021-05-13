@@ -1,3 +1,54 @@
-<app-navbar></app-navbar>
-<app-home></app-home>
-<app-footer></app-footer>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation">
+    <p>I'm the side nav</p>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+
+      <div>
+        <a routerLink="/"> TUNOSTALGIE </a>
+      </div>
+
+      <div class="nav-links-container">
+        <ul class="nav-links-ul">
+          <li>
+            <a routerLink="/">Home</a>
+          </li>
+          <li>
+            <a routerLink="/artisanat">Artisanat</a>
+          </li>
+          <li>
+            <a routerLink="/patisserie">Patisserie</a>
+          </li>
+          <li>
+            <a routerLink="/epicerie">Epicerie</a>
+          </li>
+          <li>
+            <a routerLink="/promos">Promos</a>
+          </li>
+          <li>
+            <a routerLink="/livraison">Livraison</a>
+          </li>
+          <li>
+            <a routerLink="/login">Login</a>
+          </li>
+          <li>
+            <a routerLink="/signup">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+
+      <app-footer></app-footer>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <app-navbar></app-navbar> -->
