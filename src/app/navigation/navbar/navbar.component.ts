@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   @Output() sideNavToggle = new EventEmitter();
+
   constructor() {}
 
   ngOnInit(): void {}

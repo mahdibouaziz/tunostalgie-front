@@ -1,5 +1,7 @@
 .mat-toolbar-navbar {
   position: fixed;
+  z-index: 99;
+  width: calc(100% - 17px);
 }
 
 a {
@@ -49,5 +51,9 @@ a:active {
   }
   .nav-caption {
     padding-left: 0.5rem;
+  }
+
+  .mat-toolbar-navbar {
+    width: 100%;
   }
 }
