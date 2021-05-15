@@ -8,3 +8,41 @@
   width: 100%;
   filter: brightness(55%);
 }
+
+.header-text {
+  color: #fff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 40%;
+  z-index: 2;
+  margin-left: 10rem;
+}
+
+.header-text p {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-text {
+    bottom: 40%;
+    margin-left: 6rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-text {
+    position: relative;
+    bottom: 25rem;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .header-text p {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+}

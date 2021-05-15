@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ScrollDispatcher } from '@angular/cdk/scrolling';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,11 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class NavbarComponent implements OnInit {
   @Output() sideNavToggle = new EventEmitter();
 
-  constructor() {}
+  constructor(private scrollDispatcher: ScrollDispatcher) {
+    this.scrollDispatcher.scrolled().subscribe((x) => {
+      console.log(window.scrollY);
+    });
+  }
 
   ngOnInit(): void {}
 
