@@ -42,3 +42,22 @@ hr {
   background-color: #111;
   margin: 0.5rem;
 }
+
+@media only screen and (max-width: 767px) {
+  .description {
+    padding-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .links {
+    padding-top: 0rem;
+    flex-direction: column;
+  }
+}
