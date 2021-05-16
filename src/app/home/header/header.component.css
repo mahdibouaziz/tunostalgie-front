@@ -1,48 +1,82 @@
-.header {
-  width: 100%;
-}
-
-.header-image {
-  object-fit: cover;
+.headerWrapper {
+  position: relative;
   height: 100vh;
-  width: 100%;
-  filter: brightness(55%);
 }
 
-.header-text {
-  color: #fff;
+.headerImage {
   position: absolute;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  left: 0;
+  top: 0;
+  filter: brightness(60%);
+}
+
+.banner-text {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  top: 36vh;
+  font-size: 4.5rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+.button {
   display: flex;
-  flex-direction: column;
-  bottom: 40%;
-  z-index: 2;
-  margin-left: 10rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 37vh;
+}
+.banner-button {
+  font-size: 1.4rem;
+  display: block;
+  padding: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
-.header-text p {
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 3.8rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .header-text {
-    bottom: 40%;
-    margin-left: 6rem;
+/* Meduim Screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-text {
+    top: 30vh;
+    font-size: 4.2rem;
+  }
+  .button {
+    top: 32vh;
+  }
+  .banner-button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .header-text {
-    position: relative;
-    bottom: 25rem;
-    margin-left: 0;
-    align-items: center;
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    top: 30vh;
+    font-size: 3.4rem;
   }
 
-  .header-text p {
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 3rem;
+  .button {
+    top: 30vh;
+  }
+  .banner-button {
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .banner-text {
+    top: 30vh;
+    font-size: 2.5rem;
   }
 }
